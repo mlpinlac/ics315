@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Moderate | Genres</title>
+
+  <!-- Font -->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom style sheet -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- CUSTOM JS -->
+  <script src="js/customscript.js"></script>
+
+  <!--JS-->
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-migrate-1.2.1.min.js"></script>
+  <script src="js/rd-smoothscroll.min.js"></script>
+
+
+  <!--[if lt IE 9]>
+  <div style=' clear: both; text-align:center; position: relative;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
+      <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+    </a>
+  </div>
+  <script src="js/html5shiv.js"></script>
+  <![endif]-->
+  <script src='js/device.min.js'></script>
+</head>
+<body>
+
+<div class="container-fluid">
+
+  <!--========================================================
+                        HEADER
+                 @author: Michelle Pinlac
+=========================================================-->
+  <nav class="navbar navbar-fixed-top">
+    <h2>Moderate Genres</h2>
+  </nav>
+
+  <!--========================================================
+                        Main Genre Content
+                 @author: Michelle Pinlac
+=========================================================-->
+  <div class="myDiv">
+    <ul id="categories" class="clr">
+
+      <li class="pusher"></li>
+      <li id="moderatezumba" class="animated fadeIn">
+        <div>
+          <img src="images/zumba3.png" alt=""/>
+          <h1>ZUMBA</h1>
+          <p>Exercise to upbeat music that combines all elements of fitness.</p>
+        </div>
+      </li>
+
+      <li id="moderatelinedance" class="animated fadeIn1">
+        <div>
+          <img src="images/linedance.png" alt=""/>
+          <h1>LINE DANCE</h1>
+          <p>Have fun with your friends in this country-western dance style.</p>
+        </div>
+      </li>
+
+      <li id="moderatesalsa" class="animated fadeIn2">
+        <div>
+          <img src="images/salsa.png" alt=""/>
+          <h1>SALSA</h1>
+          <p>Feel young again and spice up your life with this Latin type dance.</p>
+        </div>
+      </li>
+
+      <li class="pusher"></li>
+      <li id="moderateballroom" class="animated fadeIn3">
+        <div>
+          <img src="images/ballroom.png" alt=""/>
+          <h1>BALLROOM</h1>
+          <p>Who wouldn't want to feel classy and fancy?</p>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+  <a href="index.html" class="btn myBtn" role="button">Back to Home</a>
+</div>
+</body>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    // this is start of jQuery for moderategenre.html
+    $("#moderatezumba").click(function(){
+      window.location = 'moderatezumba.html';
+    });
+
+    $("#moderatesalsa").click(function(){
+      window.location = 'moderatesalsa.html';
+    });
+
+    $("#moderateballroom").click(function(){
+      window.location = 'moderateballroom.html';
+    });
+
+    $("#moderatelinedance").click(function(){
+      window.location = 'moderatelinedance.html';
+    });
+  });
+</script>
+
+<!-- END code by Michelle Pinlac -->
+</html>
