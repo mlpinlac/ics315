@@ -30,11 +30,6 @@
   <![endif]-->
   <script src='js/device.min.js'></script>
 </head>
-<body>
-<h2>stretch videos</h2>
-</body>
-
-
 <div class="container-fluid">
 
   <!--========================================================
@@ -55,7 +50,7 @@
 
       <li class="pusher"></li>
 
-      <li id="zumbalight" class="animated fadeIn">
+      <li id="zumbastretch" class="animated fadeIn">
         <div>
           <img src="images/zumba3.png" alt=""/>
           <h1>ZUMBA</h1>
@@ -63,7 +58,7 @@
         </div>
       </li>
 
-      <li id="linedancelight" class="animated fadeIn1">
+      <li id="linedancestretch" class="animated fadeIn1">
         <div>
           <img src="images/linedance.png" alt=""/>
           <h1>LINE DANCE</h1>
@@ -71,7 +66,7 @@
         </div>
       </li>
 
-      <li id="salsalight" class="animated fadeIn2">
+      <li id="salsastretch" class="animated fadeIn2">
         <div>
           <img src="images/salsa.png" alt=""/>
           <h1>SALSA</h1>
@@ -80,7 +75,7 @@
       </li>
 
       <li class="pusher"></li>
-      <li id = "ballroomlight" class="animated fadeIn3">
+      <li id = "ballroomstretch" class="animated fadeIn3">
         <div>
           <img src="images/ballroom.png" alt=""/>
           <h1>BALLROOM</h1>
@@ -94,4 +89,27 @@
 </div>
 <!-- END: Code by Michelle Pinlac -->
 </body>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        // this is start of jQuery for moderategenre.html
+        $("#zumbastretch").click(function(){
+            window.location = 'stretchzumba.html';
+        });
+
+        $("#salsastretch").click(function(){
+            window.location = 'stretchsalsa.html';
+        });
+
+        $("#ballroomstretch").click(function(){
+            window.location = 'stretchballroom.html';
+        });
+
+        $("#linedancestretch").click(function(){
+            window.location = 'stretchlinedance.html';
+        });
+    });
+</script>
+
+
 </html>
