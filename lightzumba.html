@@ -18,6 +18,21 @@
   <script src="js/jquery-migrate-1.2.1.min.js"></script>
   <script src="js/rd-smoothscroll.min.js"></script>
 
+  <script type="text/javascript">
+    function showMyVideos(data) {
+      var feed = data.feed;
+      var entries = feed.entry || [];
+      var html = ['<ul>'];
+      for (var i = 0; i < entries.length; i++) {
+        var entry = entries[i];
+        var title = entry.title.$t;
+        html.push('<li>', title, '</li>');
+      }
+      html.push('</ul>');
+      document.getElementById('videos').innerHTML = html.join('');
+    }
+  </script>
+
 
   <!--[if lt IE 9]>
   <div style=' clear: both; text-align:center; position: relative;'>
@@ -32,5 +47,10 @@
 </head>
 <body>
 <h2>Light Zumba videos</h2>
+<div id="videos " />
+<script
+    type="text/javascript"
+    src="https://www.youtube.com/playlist?list=PLYa0pTiCMtiyQVv-X5QMGfvMzMNob2Cou/alt=json-in-script&format=5&callback=showMyVideos">
+</script>
 </body>
 </html>
